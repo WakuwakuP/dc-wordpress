@@ -15,6 +15,7 @@ services:
       WORDPRESS_DB_NAME: wordpress
     volumes:
       - ./html:/var/www/html
+      - ./docker-config/wordpress/php.ini:/usr/local/etc/php/php.ini
 
   db:
     image: mysql:5.7
